@@ -1,0 +1,106 @@
+﻿'************************************************
+'Funtion Name: fnValidateMatchMessage(strActualMessage, strExpectedMessage) 
+'Description: This function match to strings and insert the result into report with an image
+'Input Parameters: 
+'strActualMessage
+'strExpectedMessage
+'Date of creation: 16-August-2023
+'Author: Fabo
+'*************************************************
+Function fnValidateMatchMessage(strActualMessage, strExpectedMessage)
+	strActualMessagef = trim(strActualMessage)
+	strExpectedMessagef = trim(strExpectedMessage)
+	If strActualMessagef = strExpectedMessagef Then
+		Reporter.ReportEvent micPass, "Expected Message: " & strExpectedMessagef, "Actual Message: " & strActualMessagef, fnTakeScreenshootRandomImage()
+		fnValidateMatchMessage = True
+	Else
+		Reporter.ReportEvent micFail, "Expected Message: " & strExpectedMessagef, "The message does not match, Actual Message : " & strActualMessagef, fnTakeScreenshootRandomImage()
+		fnValidateMatchMessage = False
+	End If	
+End Function
+ 
+ 
+'************************************************
+'Funtion Name: fnValidateObjctExist(object, object, time) 
+'Description: This function match two objects and valide exits
+'Input Parameters: 
+'Date of creation: 17-August-2023
+'Author: Fabo
+'*************************************************
+ 
+Function fnValidateObjctExist (obj1 , obj2, tiempo)
+	If obj1.Exist(tiempo) and obj2.Exist(tiempo) Then
+	Reporter.ReportEvent micPass, "Validacion del cotizador", "este paso valida que se muestra correctamente bla bla bla...", fnTakeScreenshootRandomImage()
+     Else
+	Reporter.ReportEvent micFail, "Validacion del cotizador", "este paso valida que se muestra correctamente bla bla bla...", fnTakeScreenshootRandomImage()
+      End If
+End Function
+ 
+ 
+'************************************************
+'Funtion Name: fnValidateAnObjctExist(object, time) 
+'Description: This function match an object exists
+'Input Parameters: obj, time
+'Date of creation: 12-March-2024
+'Author: Fabo
+'*************************************************
+ 
+Function fnValidateAnObjctExist (obj1, tiempo)
+	If obj1.Exist(tiempo) Then
+	Reporter.ReportEvent micPass, "Validar que un objeto existe", "El objeto existe", fnTakeScreenshootRandomImage()
+     Else
+	Reporter.ReportEvent micFail, "Validar que un objeto existe", "El objeto NO existe", fnTakeScreenshootRandomImage()
+      End If
+End Function
+ 
+
+'************************************************
+
+'Funtion Name: fnTakeScreenshootRandomImage() 
+
+'Description: This function make a random image in order to take screenshoots
+
+'Input Parameters: 
+
+'Date of creation: 16-August-2023
+
+'Author: Fabo
+
+'*************************************************
+
+Private Function fnTakeScreenshootRandomImage()
+	strPathProyecto = Environment("ResultDir") & "\Report\imagen" & fnRandomNumberString() & ".png"
+	Desktop.CaptureBitmap strPathProyecto
+	fnTakeScreenshootRandomImage = strPathProyecto
+End Function
+ 
+ 
+'************************************************
+
+'Funtion Name: fnRandomNumberString() 
+
+'Description: This function make a random number and concatenates it, example: 2943719
+
+'Input Parameters: 
+
+'Date of creation: 16-August-2023
+
+'Author: Fabo
+
+'*************************************************
+
+Private Function fnRandomNumberString()
+
+	For intIterator = 0 To 5 Step 1
+
+		intRandom = RandomNumber.Value(0,9)
+
+		intRandomNumber = intRandomNumber & intRandom
+
+	Next
+
+	fnRandomNumberString = intRandomNumber
+
+End Function
+ 
+ 

@@ -1,0 +1,14 @@
+﻿
+'Cliente
+Dim oCliente
+Set oCliente = new Cliente
+
+Class Cliente
+	Public CLIENTE_NUEVO
+	Public CLIENTE_EXISTENTE
+	
+	Private Sub Class_Initialize()
+		CLIENTE_NUEVO = "Cliente Nuevo"
+		CLIENTE_EXISTENTE = "Cliente Existente"
+	End  Sub
+End Class

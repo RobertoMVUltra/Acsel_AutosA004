@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>[ DTree ].Select</Name>
+    <Description>"Acsel;Suscripcion"</Description>
+    <StartTime>2024-06-14 15:38:03</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Acsel/x11g v2 ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaTree</Type>
+            <Name><![CDATA[[ DTree ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Select</Operation>
+        <OperationData><![CDATA["Acsel;Suscripcion"]]></OperationData>
+      </TestObject>
+      <IconKey>df589c25e49141a98c11ed4fd0eab060</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ DTree ].Type</Name>
+    <Description>"micReturn"</Description>
+    <StartTime>2024-06-14 15:38:05</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Acsel/x11g v2 ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaTree</Type>
+            <Name><![CDATA[[ DTree ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Type</Operation>
+        <OperationData><![CDATA["micReturn"]]></OperationData>
+      </TestObject>
+      <IconKey>df589c25e49141a98c11ed4fd0eab060</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ DTree ].Select</Name>
+    <Description>"Acsel;Suscripcion;Emisión / Modificación"</Description>
+    <StartTime>2024-06-14 15:38:07</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Acsel/x11g v2 ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaTree</Type>
+            <Name><![CDATA[[ DTree ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Select</Operation>
+        <OperationData><![CDATA["Acsel;Suscripcion;Emisión / Modificación"]]></OperationData>
+      </TestObject>
+      <IconKey>df589c25e49141a98c11ed4fd0eab060</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ DTree ].Type</Name>
+    <Description>"micReturn"</Description>
+    <StartTime>2024-06-14 15:38:08</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Acsel/x11g v2 ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaTree</Type>
+            <Name><![CDATA[[ DTree ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Type</Operation>
+        <OperationData><![CDATA["micReturn"]]></OperationData>
+      </TestObject>
+      <IconKey>df589c25e49141a98c11ed4fd0eab060</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ Consulta de Polizas ].Exist</Name>
+    <Description>"Object exists"</Description>
+    <StartTime>2024-06-14 15:38:12</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Consulta de Polizas ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Exist</Operation>
+        <OperationData><![CDATA["Object exists"]]></OperationData>
+      </TestObject>
+      <IconKey>ee23a9a269554be98cdf6e1519cdf0e9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Validar que un objeto existe</Name>
+    <Description>El objeto existe</Description>
+    <StartTime>2024-06-14 15:38:12</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\ccc27fd1-a9f8-407f-8c75-be8cc2f5331f.png</StepCustomImagePath>
+      <IconKey>d2049b0fd85f4b38a4be9dbf4521330c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>select_tree</Name>
+    <Description />
+    <StartTime>2024-06-14 15:37:55</StartTime>
+    <Duration>17</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>93aea8c6ff1c4028aec5165c2d30ad12</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-14 15:37:55</StartTime>
+    <Duration>17</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <IconKey>608ff269769d463d833b21b213591b37</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>SelectTree</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-14 15:37:54</StartTime>
+    <Duration>18</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>b9a61393499540d6af8847bbd10b6df0</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res1</ResultName>
+    <RunStartTime>2024-06-14 15:37:54</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

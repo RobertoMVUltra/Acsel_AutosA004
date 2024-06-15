@@ -1,0 +1,12 @@
+﻿'Función para crear objetos comunes en la toolbar
+
+Function fnClickOnjToolBar(strNombre)
+	Set objBrowserAcsel = Browser("name:=Acsel.*")
+	Set objPageAcsel = objBrowserAcsel.Page("title:=Acsel.*")
+	Set javaMain = objPageAcsel.JavaApplet("tagname:=Main")
+	Set jToolBar = javaMain.JavaToolbar("tagname:=ToolBar")
+	
+	jToolBar.RefreshObject()
+	JToolBar.Press strNombre
+End Function
+

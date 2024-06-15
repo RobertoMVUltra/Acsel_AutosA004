@@ -1,0 +1,23 @@
+﻿'Libreria para implementar tabs al vuelo
+
+Function fnPressTab()
+	fnPressKey("{TAB}")
+End Function
+
+Function fnPressCtrlS()
+	fnPressKey("^s")
+End Function
+
+Function fnPressEsc()
+	fnPressKey("{ESC}")
+End Function
+
+Function fnPressCtrlF4()
+	fnPressKey("^{F4}")
+End Function
+
+Private Function fnPressKey(strKey)
+	Dim mySendKeys
+	Set mySendKeys = CreateObject("WScript.Shell")
+	mySendKeys.SendKeys(strKey)
+End Function

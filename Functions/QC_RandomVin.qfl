@@ -1,0 +1,13 @@
+﻿Function fnGetRandomVin()
+	SystemUtil.Run "chrome", "https://randomvin.com/"
+	Set objBrowserRandomVin = Browser("name:=RandomVIN.com.*")
+	Set objPageRandomVin = objBrowserRandomVin.Page("title:=RandomVIN.com.*")
+'	Set wbeRandomVin = objPageRandomVin.WebElement("html tag:=H2", "index:=0")
+	Set wbeRandomVin = objPageRandomVin.WebElement("xpath:=//span[@id='Result']/h2")
+	wait 5
+	strRandomVin = wbeRandomVin.GetROProperty("innertext")
+	objBrowserRandomVin.Close()
+	fnGetRandomVin = strRandomVin
+End Function
+
+

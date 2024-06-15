@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaEdit ].Type</Name>
+    <Description>"micCtrlL"</Description>
+    <StartTime>2024-06-14 16:55:43</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Browser ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Page ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ JavaApplet ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ JavaInternalFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ JavaEdit ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Type</Operation>
+        <OperationData><![CDATA["micCtrlL"]]></OperationData>
+      </TestObject>
+      <IconKey>fbbe7ae9523641cd9f7668197b0eb267</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaEdit ].Type</Name>
+    <Description>"micCtrlL"</Description>
+    <StartTime>2024-06-14 16:55:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ :: Lista de Polizas.  (51331) ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ JavaEdit ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Type</Operation>
+        <OperationData><![CDATA["micCtrlL"]]></OperationData>
+      </TestObject>
+      <IconKey>fbbe7ae9523641cd9f7668197b0eb267</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaEdit ].Set</Name>
+    <Description>"%NEGOCIO CORPORATIVO"</Description>
+    <StartTime>2024-06-14 16:56:04</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ JavaInternalFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ JavaEdit ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["%NEGOCIO CORPORATIVO"]]></OperationData>
+      </TestObject>
+      <IconKey>fbbe7ae9523641cd9f7668197b0eb267</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaEdit ]</Name>
+    <Description>Cannot&amp;nbsp;find&amp;nbsp;the&amp;nbsp;"[&amp;nbsp;JavaEdit&amp;nbsp;]"&amp;nbsp;object's&amp;nbsp;parent&amp;nbsp;"[&amp;nbsp;JavaInternalFrame&amp;nbsp;]"&amp;nbsp;(class&amp;nbsp;JavaInternalFrame).&lt;br/&gt;Verify&amp;nbsp;that&amp;nbsp;parent&amp;nbsp;properties&amp;nbsp;match&amp;nbsp;an&amp;nbsp;object&amp;nbsp;currently&amp;nbsp;displayed&amp;nbsp;in&amp;nbsp;your&amp;nbsp;application.&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;to_class = JavaInternalFrame&lt;br&gt;TagName = Lineas de Negocio&lt;br&gt;</Description>
+    <StartTime>2024-06-14 16:56:04</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ JavaInternalFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ JavaEdit ]]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Cannot&nbsp;find&nbsp;the&nbsp;"[&nbsp;JavaEdit&nbsp;]"&nbsp;object's&nbsp;parent&nbsp;"[&nbsp;JavaInternalFrame&nbsp;]"&nbsp;(class&nbsp;JavaInternalFrame).<br/>Verify&nbsp;that&nbsp;parent&nbsp;properties&nbsp;match&nbsp;an&nbsp;object&nbsp;currently&nbsp;displayed&nbsp;in&nbsp;your&nbsp;application.]]></OperationData>
+      </TestObject>
+      <IconKey>fbbe7ae9523641cd9f7668197b0eb267</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Run Error</NodeType>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2024-06-14 16:56:48</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>9bf4452486f04ff18d7e09ddf52cbe1f</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Datos</Name>
+    <Description />
+    <StartTime>2024-06-14 16:55:42</StartTime>
+    <Duration>66</Duration>
+    <Result>Warning</Result>
+    <InputParameters>
+      <Parameter name="TIPO_DE_CLIENTE" value="Cliente Existente" type="System.String" />
+    </InputParameters>
+    <Extension>
+      <IconKey>e048d65c28da437ca562d3f7f96b46d8</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-14 16:55:41</StartTime>
+    <Duration>67</Duration>
+    <Result>Warning</Result>
+    <Extension>
+      <IconKey>08582f4c62674e289aac26d6e164e3bf</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Datos</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-14 16:55:39</StartTime>
+    <Duration>69</Duration>
+    <Result>Warning</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>ab0934e5a44145e7b9427bba88cdbfc9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res5</ResultName>
+    <RunStartTime>2024-06-14 16:55:39</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

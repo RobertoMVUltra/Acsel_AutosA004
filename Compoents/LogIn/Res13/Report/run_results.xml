@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>SystemUtil.Run "msedge",1</Name>
+    <StartTime>2024-06-11 21:23:31</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>9f54f1ce2eb842c58b05cf5ad3f83c54</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ He comprendido los riesgos, deseo acceder de todas formas ].Click</Name>
+    <Description />
+    <StartTime>2024-06-11 21:23:32</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Página de alerta de Bitdefender ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Página de alerta de Bitdefender ]]]></Name>
+          </Object>
+          <Object>
+            <Type>WebTable</Type>
+            <Name><![CDATA[[ He comprendido los riesgos, deseo acceder de todas formas ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Link</Type>
+            <Name><![CDATA[[ He comprendido los riesgos, deseo acceder de todas formas ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+      </TestObject>
+      <IconKey>da96e236dfec46f8aaad5c2e29c40032</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaButton ].Click</Name>
+    <ErrorText>Cannot find the "[ JavaButton ]" object's parent "[ JavaObject ]" (class JavaObject).
+Verify that parent properties match an object currently displayed in your application.</ErrorText>
+    <Description>Cannot&amp;nbsp;find&amp;nbsp;the&amp;nbsp;"[&amp;nbsp;JavaButton&amp;nbsp;]"&amp;nbsp;object's&amp;nbsp;parent&amp;nbsp;"[&amp;nbsp;JavaObject&amp;nbsp;]"&amp;nbsp;(class&amp;nbsp;JavaObject).&lt;br/&gt;Verify&amp;nbsp;that&amp;nbsp;parent&amp;nbsp;properties&amp;nbsp;match&amp;nbsp;an&amp;nbsp;object&amp;nbsp;currently&amp;nbsp;displayed&amp;nbsp;in&amp;nbsp;your&amp;nbsp;application.&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;TagName = JPanel&lt;br&gt;</Description>
+    <StartTime>2024-06-11 21:23:56</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[log_in]]></ModuleName>
+          <FileName><![CDATA[log_in]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[jbtnAlvertenciaSeguridad1.Click]]></Scripts>
+          <LineNo><![CDATA[51]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaWindow</Type>
+            <Name><![CDATA[[ PluginEmbeddedFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaDialog</Type>
+            <Name><![CDATA[[ Advertencia de Seguridad ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaObject</Type>
+            <Name><![CDATA[[ JavaObject ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaButton</Type>
+            <Name><![CDATA[[ JavaButton ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <OperationData><![CDATA["LEFT"]]></OperationData>
+      </TestObject>
+      <IconKey>7cadad9930a04664a48afd557a5b6e7c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2024-06-11 21:24:02</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>6a8b12fba408499392fd6569bc203f8d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>log_in</Name>
+    <Description />
+    <StartTime>2024-06-11 21:23:30</StartTime>
+    <Duration>32</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>fa4e52632f7b47f295bd4bd6ae11c7a9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-11 21:23:30</StartTime>
+    <Duration>32</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>2dd3868d73e54265a3da4d1d564eb514</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>LogIn</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-11 21:23:29</StartTime>
+    <Duration>33</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>cd93bdfefe444987bb6b861d50f0dec0</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res13</ResultName>
+    <RunStartTime>2024-06-11 21:23:29</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

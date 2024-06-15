@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>Se requiere un objeto: 'objJavaWindows'</Name>
+    <ErrorText>Se requiere un objeto: 'objJavaWindows'</ErrorText>
+    <Description>&lt;BR/&gt;Line (19): &amp;quot;Set objJavaWindows=objJavaWindows.JavaWindow(&amp;quot;tagname:=PluginEmbeddedFr.*&amp;quot;)&amp;quot;.</Description>
+    <StartTime>2024-06-11 21:21:24</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[log_in]]></ModuleName>
+          <FileName><![CDATA[log_in]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[Set objJavaWindows=objJavaWindows.JavaWindow("tagname:=PluginEmbeddedFr.*")]]></Scripts>
+          <LineNo><![CDATA[19]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <IconKey>5e307a6076c44345a76c4424c8229c7a</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\bcacfaba-a7c9-4cbd-aeac-63c74cda6081.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2024-06-11 21:22:41</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>821b478e732f48c099edae57c8208aa5</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>log_in</Name>
+    <Description />
+    <StartTime>2024-06-11 21:21:24</StartTime>
+    <Duration>77</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>0ada1de15034463c9fe1090919a49161</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-11 21:21:24</StartTime>
+    <Duration>77</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>a8bac717fd98473cb0bffc7a1313eea1</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>LogIn</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-11 21:21:23</StartTime>
+    <Duration>78</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>e840f439fc5b4849a33f4bfc6541d95b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res12</ResultName>
+    <RunStartTime>2024-06-11 21:21:23</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

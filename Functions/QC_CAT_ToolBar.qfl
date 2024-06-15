@@ -1,0 +1,20 @@
+﻿
+'ToolBar
+Dim oToolBar
+Set oToolBar = new ToolBar
+
+Class ToolBar
+	Public CREAR_REGISTRO
+	Public SALVAR
+	Public ENTRAR_CONSULTA
+	Public SALIR
+	Public ELIMINAR_REGISTRO
+	
+	Private Sub Class_Initialize()
+		CREAR_REGISTRO = "Crear Registro"
+		SALVAR = "Salvar"
+		ENTRAR_CONSULTA = "Entrar Consulta"
+		SALIR = "Salir"
+		ELIMINAR_REGISTRO = "Eliminar Registro"
+	End  Sub
+End Class

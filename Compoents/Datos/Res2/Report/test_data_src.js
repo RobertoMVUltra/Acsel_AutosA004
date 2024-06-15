@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\Proyectos UFT\\Acsel_AutosA004\\Compoents\\Datos\\Res2',namePairs:[]}]};

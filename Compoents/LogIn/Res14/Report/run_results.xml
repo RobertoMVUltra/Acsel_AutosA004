@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>SystemUtil.Run "msedge",1</Name>
+    <StartTime>2024-06-11 21:36:12</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>65336241675741288154c873b264125f</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ He comprendido los riesgos, deseo acceder de todas formas ].Click</Name>
+    <Description />
+    <StartTime>2024-06-11 21:36:14</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Página de alerta de Bitdefender ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Página de alerta de Bitdefender ]]]></Name>
+          </Object>
+          <Object>
+            <Type>WebTable</Type>
+            <Name><![CDATA[[ He comprendido los riesgos, deseo acceder de todas formas ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Link</Type>
+            <Name><![CDATA[[ He comprendido los riesgos, deseo acceder de todas formas ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+      </TestObject>
+      <IconKey>47399ace86fb44949e90a07ec29d8bf4</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ Continuar ].Click</Name>
+    <Description>"LEFT"</Description>
+    <StartTime>2024-06-11 21:36:30</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaWindow</Type>
+            <Name><![CDATA[[ PluginEmbeddedFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaDialog</Type>
+            <Name><![CDATA[[ Advertencia de Seguridad ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaButton</Type>
+            <Name><![CDATA[[ Continuar ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <OperationData><![CDATA["LEFT"]]></OperationData>
+      </TestObject>
+      <IconKey>bd2645eb19ce40fc8c3a0cbf2eaad47e</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>No bloquear.Exist</Name>
+    <Description>"Object exists"</Description>
+    <StartTime>2024-06-11 21:36:38</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Dialog</Type>
+            <Name><![CDATA[Advertencia de Seguridad]]></Name>
+          </Object>
+          <Object>
+            <Type>WinButton</Type>
+            <Name><![CDATA[No bloquear]]></Name>
+          </Object>
+        </Path>
+        <Operation>Exist</Operation>
+        <OperationData><![CDATA["Object exists"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[No bloquear]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[Button]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>de806d3f60104e6fa95532e437883ec0</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>No bloquear.Click</Name>
+    <Description />
+    <StartTime>2024-06-11 21:36:38</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Dialog</Type>
+            <Name><![CDATA[Advertencia de Seguridad]]></Name>
+          </Object>
+          <Object>
+            <Type>WinButton</Type>
+            <Name><![CDATA[No bloquear]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[No bloquear]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[Button]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>de806d3f60104e6fa95532e437883ec0</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ Usuario: ].Set</Name>
+    <Description>"USR11"</Description>
+    <StartTime>2024-06-11 21:36:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Conexión ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ Usuario: ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["USR11"]]></OperationData>
+      </TestObject>
+      <IconKey>f382696e1f0247baa62bdf884c525135</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ Contraseña: ].Set</Name>
+    <Description>"Mayo_2024"</Description>
+    <StartTime>2024-06-11 21:36:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Conexión ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ Contraseña: ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["Mayo_2024"]]></OperationData>
+      </TestObject>
+      <IconKey>f382696e1f0247baa62bdf884c525135</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ Base de Datos: ].Set</Name>
+    <Description>"Corepp"</Description>
+    <StartTime>2024-06-11 21:36:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Conexión ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaEdit</Type>
+            <Name><![CDATA[[ Base de Datos: ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["Corepp"]]></OperationData>
+      </TestObject>
+      <IconKey>f382696e1f0247baa62bdf884c525135</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ Conectar ].Click</Name>
+    <Description>"LEFT"</Description>
+    <StartTime>2024-06-11 21:36:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Conexión ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaButton</Type>
+            <Name><![CDATA[[ Conectar ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <OperationData><![CDATA["LEFT"]]></OperationData>
+      </TestObject>
+      <IconKey>bd2645eb19ce40fc8c3a0cbf2eaad47e</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ DTree ].Exist</Name>
+    <Description>"Object exists"</Description>
+    <StartTime>2024-06-11 21:36:45</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Acsel/x11g v2 ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaTree</Type>
+            <Name><![CDATA[[ DTree ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Exist</Operation>
+        <OperationData><![CDATA["Object exists"]]></OperationData>
+      </TestObject>
+      <IconKey>8e739c63d1104f449b3da0f8b07e02ef</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Advertencia de Seguridad</Name>
+    <Description>Dialog</Description>
+    <StartTime>2024-06-11 21:36:38</StartTime>
+    <Duration>7</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Dialog</Type>
+            <Name><![CDATA[Advertencia de Seguridad]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Dialog]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Advertencia de Seguridad]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[nativeclass]]></Name>
+            <Value><![CDATA[#32770]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[is owned window]]></Name>
+            <Value><![CDATA[False]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[is child window]]></Name>
+            <Value><![CDATA[False]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>c842a17ff88d46fcb096d76da879e9e7</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Validar que un objeto existe</Name>
+    <Description>El objeto existe</Description>
+    <StartTime>2024-06-11 21:36:45</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\a088c9b9-4e2f-4584-9e37-c0c431a89407.png</StepCustomImagePath>
+      <IconKey>2ce4a94f79a54d7d9abab1b3186ac611</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>log_in</Name>
+    <Description />
+    <StartTime>2024-06-11 21:36:11</StartTime>
+    <Duration>34</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>8dbe18d0416c4d3788ca7d8ec36a371a</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-11 21:36:11</StartTime>
+    <Duration>34</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <IconKey>1f6f7072f25b41af836dbdc43054b131</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>LogIn</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-11 21:36:10</StartTime>
+    <Duration>35</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>fcba7b8e568a4da0b5d15e987a701296</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res14</ResultName>
+    <RunStartTime>2024-06-11 21:36:10</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

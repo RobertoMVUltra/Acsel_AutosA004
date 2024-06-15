@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaButton ].Click</Name>
+    <Description>"LEFT"</Description>
+    <StartTime>2024-06-14 16:06:19</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ JavaInternalFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaButton</Type>
+            <Name><![CDATA[[ JavaButton ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <OperationData><![CDATA["LEFT"]]></OperationData>
+      </TestObject>
+      <IconKey>0d3aad42ae634556861ea02cfb232817</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ JavaButton ]</Name>
+    <Description>Cannot&amp;nbsp;find&amp;nbsp;the&amp;nbsp;"[&amp;nbsp;JavaButton&amp;nbsp;]"&amp;nbsp;object's&amp;nbsp;parent&amp;nbsp;"[&amp;nbsp;JavaInternalFrame&amp;nbsp;]"&amp;nbsp;(class&amp;nbsp;JavaInternalFrame).&lt;br/&gt;Verify&amp;nbsp;that&amp;nbsp;parent&amp;nbsp;properties&amp;nbsp;match&amp;nbsp;an&amp;nbsp;object&amp;nbsp;currently&amp;nbsp;displayed&amp;nbsp;in&amp;nbsp;your&amp;nbsp;application.&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;to_class = JavaInternalFrame&lt;br&gt;TagName = Consulta de Polizas&lt;br&gt;</Description>
+    <StartTime>2024-06-14 16:06:19</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ JavaInternalFrame ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaButton</Type>
+            <Name><![CDATA[[ JavaButton ]]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Cannot&nbsp;find&nbsp;the&nbsp;"[&nbsp;JavaButton&nbsp;]"&nbsp;object's&nbsp;parent&nbsp;"[&nbsp;JavaInternalFrame&nbsp;]"&nbsp;(class&nbsp;JavaInternalFrame).<br/>Verify&nbsp;that&nbsp;parent&nbsp;properties&nbsp;match&nbsp;an&nbsp;object&nbsp;currently&nbsp;displayed&nbsp;in&nbsp;your&nbsp;application.]]></OperationData>
+      </TestObject>
+      <IconKey>0d3aad42ae634556861ea02cfb232817</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Run Error</NodeType>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2024-06-14 16:06:22</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>9670ec3076e64333becfc614eb3204bb</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Datos</Name>
+    <Description />
+    <StartTime>2024-06-14 16:06:10</StartTime>
+    <Duration>12</Duration>
+    <Result>Warning</Result>
+    <InputParameters>
+      <Parameter name="TIPO_DE_CLIENTE" value="Cliente Existente" type="System.String" />
+    </InputParameters>
+    <Extension>
+      <IconKey>fd0aa640e5b8462dbe952649590e361a</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-14 16:06:10</StartTime>
+    <Duration>12</Duration>
+    <Result>Warning</Result>
+    <Extension>
+      <IconKey>f0785b74d94c42f0b37996cb9ad0e70c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2024-06-14 16:06:22</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>beac3c4e0ec24c42a8a7f81d9900af13</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Datos</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-14 16:06:08</StartTime>
+    <Duration>14</Duration>
+    <Result>Warning</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>83247f8c26cc41a4a5544208168df2f6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res2</ResultName>
+    <RunStartTime>2024-06-14 16:06:08</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

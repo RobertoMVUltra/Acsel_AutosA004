@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>[ Cancelar ].Click</Name>
+    <Description>"LEFT"</Description>
+    <StartTime>2024-06-14 16:04:59</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaInternalFrame</Type>
+            <Name><![CDATA[[ Consulta de Polizas ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaButton</Type>
+            <Name><![CDATA[[ Cancelar ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <OperationData><![CDATA["LEFT"]]></OperationData>
+      </TestObject>
+      <IconKey>1e6daf3d22794995aaaf63cdadc0e834</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>[ ToolBar ].Press</Name>
+    <Description>"Crear Registro"</Description>
+    <StartTime>2024-06-14 16:05:00</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaToolbar</Type>
+            <Name><![CDATA[[ ToolBar ]]]></Name>
+          </Object>
+        </Path>
+        <Operation>Press</Operation>
+        <OperationData><![CDATA["Crear Registro"]]></OperationData>
+      </TestObject>
+      <IconKey>7f17a0f19ae24254b997998b4f3d35f9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Número de argumentos erróneo o asignación de propiedad no válida: 'jtxtCliente.Set'</Name>
+    <ErrorText>Número de argumentos erróneo o asignación de propiedad no válida: 'jtxtCliente.Set'</ErrorText>
+    <Description>&lt;BR/&gt;Line (85): &amp;quot;jtxtCliente.Set&amp;quot;.</Description>
+    <StartTime>2024-06-14 16:05:00</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Datos]]></ModuleName>
+          <FileName><![CDATA[Datos]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[jtxtCliente.Set]]></Scripts>
+          <LineNo><![CDATA[85]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[[ Acsel 12 / Seguros Banorte - WebUtil ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaApplet</Type>
+            <Name><![CDATA[[ Main ]]]></Name>
+          </Object>
+          <Object>
+            <Type>JavaToolbar</Type>
+            <Name><![CDATA[[ ToolBar ]]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<BR/>Line (85): &quot;jtxtCliente.Set&quot;.]]></OperationData>
+      </TestObject>
+      <IconKey>b89db060b1f149219f29f08f0d598c84</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\9f02dc9d-3059-4340-9d84-7675dad6a5cb.jpeg" highlight="29,205,649,26" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2024-06-14 16:05:21</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>01f6eb455eb844c8a819eccebecf07fd</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Datos</Name>
+    <Description />
+    <StartTime>2024-06-14 16:04:57</StartTime>
+    <Duration>24</Duration>
+    <Result>Failed</Result>
+    <InputParameters>
+      <Parameter name="TIPO_DE_CLIENTE" value="Cliente Existente" type="System.String" />
+    </InputParameters>
+    <Extension>
+      <IconKey>3e8244125d7f4308aaf52d8d364a0220</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2024-06-14 16:04:57</StartTime>
+    <Duration>24</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>c5c13cf5c8fc46049f4a405e07fd2c18</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Datos</Name>
+    <ToolName>OpenText UFT One</ToolName>
+    <ToolVersion>24.2</ToolVersion>
+    <ToolVersionStringLiteral>24.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2024-06-14 16:04:54</StartTime>
+    <Duration>27</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>3c71b4b0758548ffa50b457c75ca5939</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-06:00:00</Timezone>
+      <Locale>español (México)</Locale>
+      <User>JRobertoMV</User>
+      <CpuInfo>11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz</CpuInfo>
+      <NumberOfCores>8</NumberOfCores>
+      <TotalMemory>16119</TotalMemory>
+      <HostName>DESKTOP-GCLR1FP</HostName>
+      <OSInfo>Windows 11 23H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res1</ResultName>
+    <RunStartTime>2024-06-14 16:04:54</RunStartTime>
+    <Timezone>-06:00:00</Timezone>
+    <OrchestrationToolName>OpenText UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>24.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>24.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>
