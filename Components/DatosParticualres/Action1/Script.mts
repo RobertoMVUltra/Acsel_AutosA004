@@ -154,6 +154,15 @@ Set jtabTabsCertificados = frameCertificados.JavaTab("tagname:=TabBar")
 Set frameListaDePolizas = javaMain.JavaInternalFrame("tagname:=:: Lista de Polizas.*")
 Set jtabTabsListaDePolizas = frameListaDePolizas.JavaTab("tagname:=TabBar")
 Set jtxtStsFin = frameListaDePolizas.JavaEdit("tagname:=VTextField", "text:=ACT")
+Set jtxtProd=frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:=41")
+Set jtxtOficina=frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:=93")
+Set jtxtPoliza=frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:=106")
+
+'For Iterator =106 To 203 Step 1
+'	Set jtxtPaisPlaca = frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:="&Iterator)
+'	jtxtPaisPlaca.Highlight
+'	wait 2
+'Next
 
 Set frameNumeroDeTramiteBizflow = javaMain.JavaInternalFrame("tagname:=Numero de Tramite BIZFLOW")
 Set jbtnAceptarNumetroDeTramiteBizFlow = frameNumeroDeTramiteBizflow.JavaButton("tagname:=Aceptar")
@@ -417,6 +426,13 @@ jbtnCambiarEstatusDeLaPolizaAnulado.Click
 jbtnSiAlert.Click
 jbtnActualizarO.Click
 jbtnSiAlert.Click
+
+strProd=jtxtProd.GetROProperty("text")
+strOficina=jtxtOficina.GetROProperty("text")
+strPoliza=jtxtPoliza.GetROProperty("text")
+
+fnAgregarDatosEnExcel strProd, strOficina, strPoliza
+
 strMsjActual = jtxtStsFin.GetROProperty("text")
 fnValidateMatchMessage strMsjActual, strMsjExpected
 'Borrar highlight y ctrlF4 cuando funcione el addin de edge
