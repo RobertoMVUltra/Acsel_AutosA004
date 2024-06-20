@@ -7,15 +7,35 @@ wait 2
 Set jTree = frameAcsel.JavaTree("tagname:=DTree")
 
 Set frameConsutDePolizas = javaMain.JavaInternalFrame("tagname:=Consulta de Polizas")
+Set frameCobranza=javaMain.JavaInternalFrame("tagname:=Cobranza.*")
 '''''''''''''''''''''''''''''''Variables Globales'''''''''''''''''''''''''''''''''''''''''''''''
 strMenuTree = DataTable.Value("MENU_TREE")
 strSubmenuTree = DataTable.Value("SUBMENU_TREE")
+strSubmanu2Tree=Datatable.Value("SUBMANU2_TREE")
 intTiempoEspera = 10
 '''''''''''''''''''''''''''Flujo del Script''''''''''''''''''''''''''''''''''''''''''''''''''''''
 wait 5
-jTree.Select strMenuTree
-jTree.Type micReturn
-jTree.Select strSubmenuTree
-jTree.Type micReturn
+'jTree.Select strMenuTree
+'jTree.Type micReturn
+'jTree.Select strSubmenuTree
+'jTree.Type micReturn
 
-fnValidateAnObjctExist frameConsutDePolizas, intTiempoEspera
+Select Case strMenuTree
+	Case "Acsel;Suscripcion"
+		jTree.Select strMenuTree
+		jTree.Type micReturn
+		jTree.Select strSubmenuTree
+		jTree.Type micReturn
+		
+		fnValidateAnObjctExist frameConsutDePolizas, intTiempoEspera
+	Case "Acsel;Area Administrativa y Financiera"
+		jTree.Select strMenuTree
+		jTree.Type micReturn
+		jTree.Select strSubmenuTree
+		jTree.Type micReturn
+		jTree.Select strSubmanu2Tree
+		jTree.Type micReturn
+		
+		fnValidateAnObjctExist	frameCobranza,intTiempoEspera
+End Select
+
