@@ -77,6 +77,7 @@ jtxtNoCta.Type strTab
 jtxtMda.Type strTab
 jtxtMonto.Set strReciboTotal
 wait 2 
+jbtnSiguiente.RefreshObject
 jbtnSiguiente.Click
 jbtnAceptar.Click
 jbtnOk.Click
