@@ -37,5 +37,11 @@ Select Case strMenuTree
 		jTree.Type micReturn
 		
 		fnValidateAnObjctExist	frameCobranza,intTiempoEspera
+	
+	Case "Acsel;Reclamos"
+		jTree.Select strMenuTree
+		jTree.Type micReturn
+		jTree.Select strSubmenuTree
+		jTree.Type micReturn
 End Select
 

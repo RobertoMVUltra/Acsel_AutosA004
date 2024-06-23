@@ -8,6 +8,8 @@ Set objWebTableBit=objPageBit.WebTable("name:=He comprendido los riesgos, deseo 
 Set objLinkBit=objWebTableBit.Link("name:=He comprendido los riesgos, deseo acceder de todas.*")
 'Set objAdvertenciaSeguridad1 = Window("Perfil 1: Microsoft​ Edge").JavaWindow("PluginEmbeddedFrame").JavaDialog("Advertencia de Seguridad").JavaButton("Continuar")
 Set wbtnNoBloquear = Dialog("Advertencia de Seguridad").WinButton("No bloquear")
+Set wbtnActualizarMasTarde=Window("Personal: Microsoft​ Edge").Dialog("Java Update Necesario").WinButton("Más tarde")
+
 'Set objtAdvertenciaSeguridad3= Browser("Acsel 12 / Seguros Banorte_3").Page("Acsel 12 / Seguros Banorte").JavaWindow("PluginEmbeddedFrame").JavaDialog("Advertencia de Seguridad").JavaButton("Ejecutar")
 'Browser("Acsel 12 / Seguros Banorte_4").Page("Acsel 12 / Seguros Banorte").JavaWindow("PluginEmbeddedFrame").JavaDialog("Advertencia de Seguridad").JavaButton("Continuar").Click
 
@@ -46,6 +48,11 @@ intPosY = 0
 SystemUtil.Run strNavegador, strUrl
 'objBloqueoPaginaBitdefender.Click
 objLinkBit.Click
+
+If wbtnActualizarMasTarde.Exist(3) Then
+	wbtnActualizarMasTarde.Click
+End If
+
 jbtnAlvertenciaSeguridad1.Click
 wait 7
 if wbtnNoBloquear.Exist(3) then 
