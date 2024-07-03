@@ -1,0 +1,76 @@
+﻿'************************************************
+'Funtion Name: fnAgregarDatosEnExcel(Str , Str, Str) 
+'Description: Agregar Datos en archivo Excel
+'Input Parameters: 
+'Date of creation: 18-Junio-2023
+'Author: Roberto
+'*************************************************
+Dim xlApp ' Objeto de la aplicación Excel
+Dim xlBook ' Objeto del libro Excel
+Dim xlSheet ' Objeto de la hoja Excel
+Dim xlRow ' Variable para manejar las filas
+
+Function fnAgregarDatosEnExcel(strProd, strOficina, strPoliza)
+	' Crear una instancia de la aplicación Excel
+	Set xlApp = CreateObject("Excel.Application")
+	xlApp.Visible = True ' Hacer visible la aplicación Excel (opcional)
+	
+	' Abrir un libro existente o crear uno nuevo
+	Set xlBook = xlApp.Workbooks.Open("C:\Proyectos UFT\Acsel_AutosA004\Data\polizas.xlsx")
+	
+	' Seleccionar la hoja en la que se desea agregar datos (por ejemplo, la primera hoja)
+	Set xlSheet = xlBook.Sheets(1)
+	
+	' Encontrar la última fila utilizada en la hoja
+	xlRow = xlSheet.UsedRange.Rows.Count + 1
+	
+	' Agregar datos a la siguiente fila disponible
+	xlSheet.Cells(xlRow, 1).Value = strProd
+	xlSheet.Cells(xlRow, 2).Value = strOficina
+	xlSheet.Cells(xlRow, 3).Value = strPoliza
+	' Agregar más datos según sea necesario
+	' Guardar los cambios en el libro
+	xlBook.Save
+	
+	' Cerrar el libro y la aplicación Excel
+	xlBook.Close
+	xlApp.Quit
+
+	' Liberar los objetos de Excel de la memoria
+	Set xlSheet = Nothing
+	Set xlBook = Nothing
+	Set xlApp = Nothing
+End Function
+
+Function fnAgregarDatosSiniestros(strSiniestro, strSerie, strOficina, strPoliza)
+	' Crear una instancia de la aplicación Excel
+	Set xlApp = CreateObject("Excel.Application")
+	xlApp.Visible = True ' Hacer visible la aplicación Excel (opcional)
+	
+	' Abrir un libro existente o crear uno nuevo
+	Set xlBook = xlApp.Workbooks.Open("C:\Proyectos UFT\Acsel_AutosA004\Data\polizas.xlsx")
+	
+	' Seleccionar la hoja en la que se desea agregar datos (por ejemplo, la primera hoja)
+	Set xlSheet = xlBook.Sheets(2)
+	
+	' Encontrar la última fila utilizada en la hoja
+	xlRow = xlSheet.UsedRange.Rows.Count + 1
+	
+	' Agregar datos a la siguiente fila disponible
+	xlSheet.Cells(xlRow, 1).Value = strSiniestro
+	xlSheet.Cells(xlRow, 2).Value = strSerie
+	xlSheet.Cells(xlRow, 3).Value = strOficina
+	xlSheet.Cells(xlRow, 4).Value = strPoliza
+	' Agregar más datos según sea necesario
+	' Guardar los cambios en el libro
+	xlBook.Save
+	
+	' Cerrar el libro y la aplicación Excel
+	xlBook.Close
+	xlApp.Quit
+
+	' Liberar los objetos de Excel de la memoria
+	Set xlSheet = Nothing
+	Set xlBook = Nothing
+	Set xlApp = Nothing
+End Function
