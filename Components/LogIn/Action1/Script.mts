@@ -6,12 +6,13 @@ Set objBrowserBit=Browser("name:=Página de alerta de Bitdefen.*")
 Set objPageBit=objBrowserBit.Page("title:=Página de alerta de Bitde.*")
 Set objWebTableBit=objPageBit.WebTable("name:=He comprendido los riesgos, deseo accede.*")
 Set objLinkBit=objWebTableBit.Link("name:=He comprendido los riesgos, deseo acceder de todas.*")
-'Set objAdvertenciaSeguridad1 = Window("Perfil 1: Microsoft​ Edge").JavaWindow("PluginEmbeddedFrame").JavaDialog("Advertencia de Seguridad").JavaButton("Continuar")
+'En ocasiones cambia la pantalla de inicio y hay que llamar el objeto de la linea 10 y 11
+Set MasInformacion =Browser("Este sitio no es seguro.").Page("Este sitio no es seguro.").Link("Más información")
+Set ContiniarConLaPagina=Browser("Este sitio no es seguro._2").Page("Este sitio no es seguro.").Link("Continuar a la página")
 Set wbtnNoBloquear = Dialog("Advertencia de Seguridad").WinButton("No bloquear")
 Set wbtnActualizarMasTarde=Window("Personal: Microsoft​ Edge").Dialog("Java Update Necesario").WinButton("Más tarde")
 
-'Set objtAdvertenciaSeguridad3= Browser("Acsel 12 / Seguros Banorte_3").Page("Acsel 12 / Seguros Banorte").JavaWindow("PluginEmbeddedFrame").JavaDialog("Advertencia de Seguridad").JavaButton("Ejecutar")
-'Browser("Acsel 12 / Seguros Banorte_4").Page("Acsel 12 / Seguros Banorte").JavaWindow("PluginEmbeddedFrame").JavaDialog("Advertencia de Seguridad").JavaButton("Continuar").Click
+
 
 Set wbtnEjecutar = Window("Perfil 1: Microsoft​ Edge").JavaApplet("Main").JavaDialog("tagname:=Advertencia de Seguridad") @@ hightlight id_;_264576_;_script infofile_;_ZIP::ssf1.xml_;_
 
@@ -47,7 +48,14 @@ intPosY = 0
 '''''''''''''''''''''''''''Flujo del Script''''''''''''''''''''''''''''''''''''''''''''''''''''''
 SystemUtil.Run strNavegador, strUrl
 'objBloqueoPaginaBitdefender.Click
-objLinkBit.Click
+
+If MasInformacion.Exist(2) Then
+	MasInformacion.Click
+	ContiniarConLaPagina.Click
+else 
+	objLinkBit.Click
+End If
+
 
 If wbtnActualizarMasTarde.Exist(3) Then
 	wbtnActualizarMasTarde.Click

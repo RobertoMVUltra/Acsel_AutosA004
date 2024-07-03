@@ -57,16 +57,33 @@ Set jbtnAceptarCoberturaCertificado=frameCoberturaCertificado.JavaButton("tagnam
 Set frameReservaCertificado = javaMain.JavaInternalFrame("tagname:=Reserva del Certifica.*")
 Set jbtnReservaCertificado=frameReservaCertificado.JavaButton("tagname:=VButton", "index:=0")
 Set jtabTabsBarSiniestros = frameSiniestros.JavaTab("tagname:=TabBar")
-'Set frameSiniestrosGenerales2=javaMain.JavaInternalFrame("tagname:=.::  Siniestros  Generales  :*")
+
 Set jtxtAreaNuevaDescripcion=frameSiniestros.JavaEdit("tagname:=FLWTextArea", "index:=0")
 Set jbtnSalvar=frameSiniestros.JavaButton("tagname:=Salvar")
 Set jbtnActualizarSiniestro=frameSiniestros.JavaButton("tagname:=VButton", "index:=0")
+Set jtxtSiniestro2=frameSiniestros.JavaEdit("tagname:=VTextField", "index:=20")
+Set jtxtSerie2=frameSiniestros.JavaEdit("tagname:=VTextField", "index:=35")
+Set jtxtOficina2=frameSiniestros.JavaEdit("tagname:=VTextField", "index:=65")
+Set jtxtPoliza2=frameSiniestros.JavaEdit("tagname:=VTextField", "index:=80")
+Set objWindow=Window("Personal: Microsoft​ Edge")
+Set jbtnDclinar=Window("Personal: Microsoft​ Edge").Dialog("Adobe Reader 8").Page("License Agreement").WebButton("Decline")
+Set jbtnQuit=Window("Personal: Microsoft​ Edge").Dialog("Adobe Reader 8").Page("Decline License Agreement").WebButton("Quit")
+Set jbtnExit=Window("Adobe Reader").Dialog("Adobe Reader").WinButton("Exit")
 
-'For Iterator = 0 To 63 Step 1
-'	Set jtxtAreaNuevaDescripcion=frameSiniestros.JavaButton("tagname:=VButton", "index:="&Iterator)
-'	jtxtAreaNuevaDescripcion.Highlight
+
+
+'jtxtBuscarGerenciaRespons.Highlight
+'jtxtSiniestro.Highlight
+'jtxtSerie.Highlight
+'jtxtOficina.Highlight
+'jtxtPoliza.Highlight
+'jtxtPoliza2.Highlight
+'For Iterator =65 To 150 Step 1
+'	Set jtxtSiniestro=frameSiniestros.JavaEdit("tagname:=VTextField", "index:="&Iterator)
+'	jtxtSiniestro.Highlight
 'Next
-'
+
+
 '''''''''''''''''''''''''''''''Variables Globales'''''''''''''''''''''''''''''''''''''''''''''''
 strCtrL = micCtrl & "L"
 strTab = micTab
@@ -108,13 +125,6 @@ jtxtBuscarOficinas.Set strBucarOficina
 jbtnBuscarOficinas.Click
 jcmbListaBucarOficinas.Select strListaOficinas
 jbtnAceptarOficinas.Click
-
-
-'jtxtCodiOficinaResponsable.Type  strCtrL
-'jtxtBuscarOficinasRespon.Set strBucarOficinaRespon
-'jbtnBuscarOficinasRespon.Click
-'jcmbListaBucarOficinasRespon.Select strListaOficinasRespon
-'jbtnAceptarOficinasRespon.Click
 
 jtxtCausa.Type strCtrL
 jtxtBuscarCausaSiniestro.Set strBucarCausaSiniestro
@@ -160,7 +170,17 @@ jtabTabsBarSiniestros.Select strTabBarDescripcion
 jtxtAreaNuevaDescripcion.Set strDescripcionSiniestro
 jbtnSalvar.Click
 jtabTabsBarSiniestros.Select strTabBarSiniestros
+
+
+strSiniestro=jtxtSiniestro2.GetROProperty("text")
+strSerie=jtxtSerie2.GetROProperty("text")
+strOficina=jtxtOficina2.GetROProperty("text")
+strPoliza=jtxtPoliza2.GetROProperty("text")
+fnAgregarDatosSiniestros strSiniestro, strSerie, strOficina,strPoliza
 jbtnActualizarSiniestro.Click
-''Window("title:=Página de alerta de Bitdefender").Close
 
-
+jbtnDclinar.Click
+jbtnQuit.Click
+jbtnExit.Click
+objWindow.Close
+'objBrowserAcsel.CloseAllTabs
