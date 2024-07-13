@@ -52,6 +52,7 @@ strBuscarTipoCobro=DataTable.Value("BUSCAR_TIPO_COBRO")
 strBuscarListaTipoCobro=DataTable.Value("LISTA_COBRO")
 strBuscarTipoCobroDescuento=DataTable.Value("DESCUENTOS_INGRESOS")
 intTiempoEspera = 10
+intTiempoObjetoExiste=15
 '''''''''''''''''''''''''''Flujo del Script''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 jtxtOficina.Set strOficina
@@ -76,10 +77,18 @@ jbtnBuscarTipoCobroDescuento.Click
 jtxtNoCta.Type strTab
 jtxtMda.Type strTab
 jtxtMonto.Set strReciboTotal
+
+fnValidateAnObjctExist jbtnSiguiente, intTiempoObjetoExiste
 wait 2 
 jbtnSiguiente.RefreshObject
 jbtnSiguiente.Click
+fnValidateAnObjctExist jbtnAceptar, intTiempoObjetoExiste
 jbtnAceptar.Click
 jbtnOk.Click
+fnValidateAnObjctExist jbtnCancelar, intTiempoObjetoExiste
 jbtnCancelar.Click
 jbtnFinalizar.Click
+
+objBrowserAcsel.Highlight
+fnPressCtrlF4()
+objBrowserAcsel.CloseAllTabs()

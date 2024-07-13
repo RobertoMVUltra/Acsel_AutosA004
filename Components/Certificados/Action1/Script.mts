@@ -46,6 +46,7 @@ intTiempoEspera = Cint(10)
 'strParamTipoCliente = Parameter("TIPO_DE_CLIENTE")
 '''''''''''''''''''''''''''Flujo del Script''''''''''''''''''''''''''''''''''''''''''''''''''''''
 'Certificados
+wait 4
 fnClickOnjToolBar oToolBar.CREAR_REGISTRO
 jtxtNumero.Set strNumero
 jtxtDescripcion.Set strDescripcion
