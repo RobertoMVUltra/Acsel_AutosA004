@@ -114,6 +114,32 @@ Set jbtnEstadisticas = frameCertificados.JavaButton("tagname:=Estadisticas")
  Set JavaMainRepo = objPageAcselRepo.JavaApplet("Main")
  Set frameCoberturasPorCertificadoRepo = JavaMainRepo.JavaInternalFrame("Coberturas por Certificado")
  Set jbtnReFacturar = frameCoberturasPorCertificadoRepo.JavaButton("Re-Facturar")
+ Set jtxtCobA002=frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "text:=A002")
+ Set jtxtCobA051=frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "text:=A051") 
+ Set jtxtCodPlan = frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "index:=7")
+ Set jtxtCobertura=frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "index:=1")
+ Set jtxtCobertura2=frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "index:=0")
+ 
+' For Iterator = 0 To 63 Step 1
+'	Set jtxtPaisPlaca = frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "index:="&Iterator)
+'	jtxtPaisPlaca.Highlight
+'	wait 2
+'Next
+ 
+Set frameListaCoberturas=JavaMainRepo.JavaInternalFrame("tagname:=Consulta de Coberturas")
+Set jtxtBuscarListaDeCoberturas=frameListaCoberturas.JavaEdit("tagname:=Buscar")
+Set jcmbBuscarListaDeCoberturas = frameListaCoberturas.JavaList("tagname:=Buscar")
+Set jbtnBuscarListaDeCoberturas = frameListaCoberturas.JavaButton("tagname:=Buscar")
+Set jbtnAceptarListaDeCoberturas = frameListaCoberturas.JavaButton("tagname:=Aceptar")
+ 
+'For Iterator = 0 To 63 Step 1
+'	Set jtxtPaisPlaca = frameCoberturasPorCertificadoRepo.JavaEdit("tagname:=VTextField", "index:="&Iterator)
+'	jtxtPaisPlaca.Highlight
+'	wait 2
+'Next
+
+
+ Set jtabTabsCoberturas=frameCoberturasPorCertificadoRepo.JavaTab("tagname:=TabBar")
  
  Set frameListaDePolizasRepo = JavaMainRepo.JavaInternalFrame("Lista de Polizas")
  Set jbtnActualizar = frameListaDePolizasRepo.JavaButton("Actualizar")
@@ -128,6 +154,15 @@ Set jtabTabsCertificados = frameCertificados.JavaTab("tagname:=TabBar")
 Set frameListaDePolizas = javaMain.JavaInternalFrame("tagname:=:: Lista de Polizas.*")
 Set jtabTabsListaDePolizas = frameListaDePolizas.JavaTab("tagname:=TabBar")
 Set jtxtStsFin = frameListaDePolizas.JavaEdit("tagname:=VTextField", "text:=ACT")
+Set jtxtProd=frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:=41")
+Set jtxtOficina=frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:=93")
+Set jtxtPoliza=frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:=106")
+
+'For Iterator =106 To 203 Step 1
+'	Set jtxtPaisPlaca = frameListaDePolizas.JavaEdit("tagname:=VTextField", "index:="&Iterator)
+'	jtxtPaisPlaca.Highlight
+'	wait 2
+'Next
 
 Set frameNumeroDeTramiteBizflow = javaMain.JavaInternalFrame("tagname:=Numero de Tramite BIZFLOW")
 Set jbtnAceptarNumetroDeTramiteBizFlow = frameNumeroDeTramiteBizflow.JavaButton("tagname:=Aceptar")
@@ -161,6 +196,7 @@ Set jtxtBuscarListaAcuerdosDePago = frameAcuerdosDePago.JavaEdit("tagname:=Busca
 Set jcmbBuscarListaAcuerdosDePago  = frameAcuerdosDePago.JavaList("tagname:=Buscar")
 Set jbtnBuscarListaAcuerdosDePago  = frameAcuerdosDePago.JavaButton("tagname:=Buscar")
 Set jbtnAceptarListaAcuerdosDePago  = frameAcuerdosDePago.JavaButton("tagname:=Aceptar")
+
 
 'Set jtabTabs = frameDatosParticularesDelVehiculo.JavaTab("tagname:=TabBar")
 'jtxtOficinaEmisora.Highlight
@@ -201,11 +237,16 @@ strBuscarListaAcuerdoDePago = DataTable.Value("BUSCAR_LISTA_ACUERDOS_DEPAGO")
 strListaAcuerdoDePago = DataTable.Value("ACUERDO_DE_PAGO")
 strListaDeCobro = DataTable.Value("LISTA_DE_COBRO")
 strBuscarZonaGestion = DataTable.Value("BUSCAR_ZONA_GESTION")
+strBuscarLIstaDeCoberturas= DataTable.Value("BUSCAR_LISTA_DE_COBERTURA")
+strBuscarLIstaDeCoberturas2=DataTable.Value("BUSCAR_LISTA_DE_COBERTURA2")
+srtListaDeCoberturas=CInt(DataTable.Value("LISTA_DE_COBERTURA"))
 strSubTabRespDePago = "Resp. de Pago"
 strSubTabCerfificados = "Certificados"
 strSubTabPoliza = "Poliza"
 strSubTabPolizas = "Polizas"
 strMsjExpected = "ACT"
+strSubTabDetalles="Detalles"
+strSubTabCobertutas="Coberturas"
 'strDate = Date()
 intTiempoEspera = Cint(10)
 'strParamTipoCliente = Parameter("TIPO_DE_CLIENTE")
@@ -314,6 +355,29 @@ wait 5
 fnClickOnjToolBar oToolBar.SALIR
 jbtnCoberturas.Click
 jbtnReFacturar.Click
+
+strCodPlan= jtxtCodPlan.GetROProperty("text")
+If strCodPlan="A01" Then
+
+	jtxtCobA002.Type strTab
+	jtxtCobertura.Type strCtrL
+	jtxtBuscarListaDeCoberturas.Set strBuscarLIstaDeCoberturas
+	jbtnBuscarListaDeCoberturas.Click
+	jcmbBuscarListaDeCoberturas.Select srtListaDeCoberturas
+	jbtnAceptarListaDeCoberturas.Click
+	fnClickOnjToolBar oToolBar.SALVAR
+	jtabTabsCoberturas.Select strSubTabCobertutas
+	
+	jtxtCobA051.Type strTab
+	jtxtCobertura2.Type strCtrL
+	jtxtBuscarListaDeCoberturas.Set strBuscarLIstaDeCoberturas2
+	jbtnBuscarListaDeCoberturas.Click
+	jcmbBuscarListaDeCoberturas.Select srtListaDeCoberturas
+	jbtnAceptarListaDeCoberturas.Click
+	fnClickOnjToolBar oToolBar.SALVAR
+	jtabTabsCoberturas.Select strSubTabCobertutas
+	
+End If
 fnClickOnjToolBar oToolBar.SALIR
 jbtnEstadisticas.Click
 
@@ -362,6 +426,13 @@ jbtnCambiarEstatusDeLaPolizaAnulado.Click
 jbtnSiAlert.Click
 jbtnActualizarO.Click
 jbtnSiAlert.Click
+
+strProd=jtxtProd.GetROProperty("text")
+strOficina=jtxtOficina.GetROProperty("text")
+strPoliza=jtxtPoliza.GetROProperty("text")
+
+fnAgregarDatosEnExcel strProd, strOficina, strPoliza
+
 strMsjActual = jtxtStsFin.GetROProperty("text")
 fnValidateMatchMessage strMsjActual, strMsjExpected
 'Borrar highlight y ctrlF4 cuando funcione el addin de edge
