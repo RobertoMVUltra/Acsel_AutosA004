@@ -9,9 +9,11 @@ Function fnObjectNotFound(Object, Method, Arguments, retVal)
 '	If strCriticity = "Alto" Then
 		Reporter.ReportEvent micFail, "El objeto existe", "El objeto con nombre "&strObjName, fnTakeScreenshootRandomImage()
 '		objBrowserAcsel.CloseAllTabs()
-		objBrowserAcsel.Highlight
-		fnPressCtrlF4()
+'		objBrowserAcsel.Highlight
+'		fnPressCtrlF4()
+		objBrowserAcsel.CloseAllTabs()
 		ExitTestIteration()
+		
 '	End If
 		
 End Function
@@ -20,14 +22,14 @@ End Function
 'Object not enabled
 Function fnObjectNotEnabled(Object, Method, Arguments, retVal)
 	Set objBrowserAcsel = Browser("name:=Acsel.*")
-	strObjName = Object.GetRoProperty("objname")
-	strCriticity = Object.GetRoProperty("criticidad")
+'	strObjName = Object.GetRoProperty("objname")
+'	strCriticity = Object.GetRoProperty("criticidad")
 	
 '	If strCriticity = "Alto" Then
 		Reporter.ReportEvent micFail, "El objeto eta habilitado", "El objeto con nombre "&strObjName, fnTakeScreenshootRandomImage()
-'		objBrowserAcsel.CloseAllTabs()
-		objBrowserAcsel.Highlight
-		fnPressCtrlF4()
+	      objBrowserAcsel.CloseAllTabs()
+'		objBrowserAcsel.Highlight
+'		fnPressCtrlF4()
 		ExitTestIteration()
 '	End If
 		
