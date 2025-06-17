@@ -10,13 +10,13 @@ Dim xlBook ' Objeto del libro Excel
 Dim xlSheet ' Objeto de la hoja Excel
 Dim xlRow ' Variable para manejar las filas
 
-Function fnAgregarDatosEnExcel(strProd, strOficina, strPoliza)
+Function fnAgregarDatosEnExcel(strProd, strOficina, strPoliza,strFecha)
 	' Crear una instancia de la aplicación Excel
 	Set xlApp = CreateObject("Excel.Application")
 	xlApp.Visible = True ' Hacer visible la aplicación Excel (opcional)
 	
 	' Abrir un libro existente o crear uno nuevo
-	Set xlBook = xlApp.Workbooks.Open("C:\Proyectos UFT\Acsel_AutosA004\Data\polizas.xlsx")
+	Set xlBook = xlApp.Workbooks.Open("C:\gitBanorte\Acsel_AutosA004_Insumos\Data\polizas.xlsx")
 	
 	' Seleccionar la hoja en la que se desea agregar datos (por ejemplo, la primera hoja)
 	Set xlSheet = xlBook.Sheets(1)
@@ -28,6 +28,7 @@ Function fnAgregarDatosEnExcel(strProd, strOficina, strPoliza)
 	xlSheet.Cells(xlRow, 1).Value = strProd
 	xlSheet.Cells(xlRow, 2).Value = strOficina
 	xlSheet.Cells(xlRow, 3).Value = strPoliza
+	xlSheet.Cells(xlRow, 4).Value = strFecha
 	' Agregar más datos según sea necesario
 	' Guardar los cambios en el libro
 	xlBook.Save
@@ -42,25 +43,26 @@ Function fnAgregarDatosEnExcel(strProd, strOficina, strPoliza)
 	Set xlApp = Nothing
 End Function
 
-Function fnAgregarDatosSiniestros(strSiniestro, strSerie, strOficina, strPoliza)
+Function fnAgregarDatosSiniestros(strSiniestro, strSerie, strOficina, strPoliza,strFecha)
 	' Crear una instancia de la aplicación Excel
 	Set xlApp = CreateObject("Excel.Application")
 	xlApp.Visible = True ' Hacer visible la aplicación Excel (opcional)
 	
 	' Abrir un libro existente o crear uno nuevo
-	Set xlBook = xlApp.Workbooks.Open("C:\Proyectos UFT\Acsel_AutosA004\Data\polizas.xlsx")
+	Set xlBook = xlApp.Workbooks.Open("C:\gitBanorte\Acsel_AutosA004_Insumos\Data\polizas.xlsx")
 	
 	' Seleccionar la hoja en la que se desea agregar datos (por ejemplo, la primera hoja)
-	Set xlSheet = xlBook.Sheets(2)
+	Set xlSheet = xlBook.Sheets(1)
 	
 	' Encontrar la última fila utilizada en la hoja
-	xlRow = xlSheet.UsedRange.Rows.Count + 1
+	xlRow = xlSheet.UsedRange.Rows.Count
 	
 	' Agregar datos a la siguiente fila disponible
-	xlSheet.Cells(xlRow, 1).Value = strSiniestro
-	xlSheet.Cells(xlRow, 2).Value = strSerie
-	xlSheet.Cells(xlRow, 3).Value = strOficina
-	xlSheet.Cells(xlRow, 4).Value = strPoliza
+	xlSheet.Cells(xlRow, 5).Value = strSiniestro
+	xlSheet.Cells(xlRow, 6).Value = strSerie
+	xlSheet.Cells(xlRow, 7).Value = strOficina
+	xlSheet.Cells(xlRow, 8).Value = strPoliza
+	xlSheet.Cells(xlRow, 9).Value = strFecha
 	' Agregar más datos según sea necesario
 	' Guardar los cambios en el libro
 	xlBook.Save

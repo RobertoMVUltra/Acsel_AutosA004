@@ -149,6 +149,10 @@ jbtnBuscarRamoCertificado.Click
 jcmbListaRamoCertificado.Select strListaRamoCertificado	
 jbtnAceptarRamoCertificado.Click
 jtxtAjustador.Type micTab
+
+'Capturar pantalla de consulta poliza Siniestro
+fnValidateAnObjctExist jbtnReservas, intTiempoObjetoExiste
+
 jbtnReservas.Click
 fnClickOnjToolBar oToolBar.CREAR_REGISTRO
 jtxtCodCoberturaReserva.Type strCtrL
@@ -163,8 +167,15 @@ jradioPorcentajeSumaAsegurada.Click 1,1,"LEFT"
 fnClickOnjToolBar oToolBar.SALVAR
 fnClickOnjToolBar oToolBar.SALIR
 
+'Capturar pantalla de consulta poliza Siniestro
+fnValidateAnObjctExist jbtnReservaCertificado, intTiempoObjetoExiste
+
 jbtnReservaCertificado.Click
 fnClickOnjToolBar oToolBar.SALIR
+
+'Capturar pantalla de consulta poliza Siniestro
+fnValidateAnObjctExist jtabTabsBarSiniestros, intTiempoObjetoExiste
+
 jtabTabsBarSiniestros.Select strTabBarDescripcion
 
 jtxtAreaNuevaDescripcion.Set strDescripcionSiniestro
@@ -177,6 +188,7 @@ strSerie=jtxtSerie2.GetROProperty("text")
 strOficina=jtxtOficina2.GetROProperty("text")
 strPoliza=jtxtPoliza2.GetROProperty("text")
 fnAgregarDatosSiniestros strSiniestro, strSerie, strOficina,strPoliza
+fnValidateAnObjctExist jbtnActualizarSiniestro, intTiempoObjetoExiste
 jbtnActualizarSiniestro.Click
 
 jbtnDclinar.Click

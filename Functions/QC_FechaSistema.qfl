@@ -1,0 +1,9 @@
+﻿Function fnGetDate()
+	fecha=CDate( Date())
+ 	fnGetDate=  fecha
+End Function
+
+Function fnGetDateHour()
+	timestamp=CDate(now())
+	fnGetDateHour=timestamp
+End Function

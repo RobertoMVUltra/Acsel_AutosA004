@@ -49,7 +49,7 @@ intPosY = 0
 SystemUtil.Run strNavegador, strUrl
 'objBloqueoPaginaBitdefender.Click
 
-If MasInformacion.Exist(2) Then
+If MasInformacion.Exist(3) Then
 	MasInformacion.Click
 	ContiniarConLaPagina.Click
 else 
